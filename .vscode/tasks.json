@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run Desktop App (Dev)", // This is the name you'll see in VS Code
+            "type": "shell", // Indicates it's a shell command
+            "command": "./gradlew desktopRun -PmainClass=org.example.project.MainKt",
+            "group": {
+                "kind": "build",
+                "isDefault": true // Makes this the default 'build' task
+            },
+            "presentation": {
+                "reveal": "always", // Always show the terminal when this task runs
+                "panel": "new" // Run in a new terminal panel
+            },
+            "problemMatcher": [] // No specific problem matching needed for just running
+        }
+    ]
+}
