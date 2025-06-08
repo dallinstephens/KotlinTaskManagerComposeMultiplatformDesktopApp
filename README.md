@@ -1,22 +1,20 @@
 # Overview
+## What I am trying to accomplish as a Software Developer
+With the advancement of artificial intelligence (AI) search engines, as a Software Developer I am learning how to better interact with AI to build and learn code that I am unfamiliar with. I believe it is a skill to learn to communicate effectively with AI learn new programming language. At the same time, I think it is important to focus on understanding the code rather than just regugitating it. The better I understand code, the better I can communicating with an AI tool to help me build a project. I think AI search engines are great tools for advancing technology and helping society.
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+## Description of Software
+This is a JetBrains JetPack Compose Multiplatform Desktop Application for managing tasks and more specifically used to build small consistent habits. It utilizes the Kotlin programming language. In the program, a trigger is a signal that the user chooses to help the user start a task. For example, a task could be to exercise. The trigger to start the exercise could be right after dinner. A user can also input a distraction to avoid. In other words, the idea is that the user commits to not being distracted with the particular distraction the user chooses to input. The distraction could be any obstacle that may get in the way of the user successfully doing a specific task. The user has the ability to add or delete a task block.
 
-{Provide a description of the software that you wrote to demonstrate the Kotlin language.}
+## Video Demo
 
-{Describe your purpose for writing this software.}
+This is a demo of my running task manager program.
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/ySjuE6wP1sA)
 
 # Development Environment
-
-{Describe the tools that you used to develop the software}
-
-{Describe the programming language that you used and any libraries.}
 * Kotlin
-* Compose Multiplatform
+* JetBrains Compose Multiplatform Desktop Application
+* JetPack
 * Visual Studio Code
 * Kotlin Language by fwcd (Visual Studio Code Extension)
 * Code Runner by Jun Han (Visual Studio Code Extension)
@@ -24,8 +22,6 @@
 * GitHub / Git
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
 - [Kotlin](https://kotlinlang.org/)
 - [Learn Kotlin Programming Tutorial - Programiz](https://www.programiz.com/kotlin-programming)
 - [Kotlin - Install the Compiler](https://kotlinlang.org/docs/command-line.html)
@@ -38,16 +34,14 @@
 - [Gradle Compatibility Matrix](https://docs.gradle.org/current/userguide/compatibility.html)
 - [JDK 17 - LTS Download](https://adoptium.net/temurin/releases/?os=any&arch=any&version=17)
 - [JetPack Compose Tutorial](https://www.jetpackcompose.net/textfield-in-jetpack-compose)
+- [JetPack](https://developer.android.com/jetpack)
 - [androidx.compose.material3 API Reference Overview](https://www.jetpackcompose.net/textfield-in-jetpack-compose)
-
+- [Gemini AI Search Engine](https://gemini.google.com/app)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Another feature that could enhance the task manager is a drag and drop feature. That way task blocks could be organized by the user more easily.
+- Another feature would be to provide instructions to the user so that user understand how to task manager works.
+- Another feature could be to add drop downs so that user can select more and type less.
 
 # Note: This info below is provided from the README file from JetBrains.
 This is a Kotlin Multiplatform project targeting Desktop.

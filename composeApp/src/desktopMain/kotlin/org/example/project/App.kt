@@ -70,27 +70,39 @@ import java.util.UUID
 // I want each TaskCard to be in a different row. When I click a button in a TaskCard, 
 // it appends a new TaskCard in the next row underneath it.
 
+// Reference for data class: https://kotlinlang.org/docs/data-classes.html
+// Reference for UUID.randomUUID(): https://www.uuidgenerator.net/dev-corner/kotlin
+// UUID.randomUUID().toString() is used to generate random Ids.
+
+// Day could a single or multiple days: Examples (M-F, Mon-Fri, Tuesday, Sat-Sun, etc)
 data class Day(
     val id: String = UUID.randomUUID().toString(), // unique id for each task
     var text: String
 )
 
 // This is used to create a list of tasks for the TextFields.
+// A task could be a habit that the user is trying to build.
 data class Task(
     val id: String = UUID.randomUUID().toString(), // unique id for each task
     var text: String
 )
 
+// A trigger is a signal that a user uses to start a task. So, if the user has "exercise" as a task.
+// A trigger could be "dinner" which means after dinner, the user will start exercising.
 data class Trigger(
     val id: String = UUID.randomUUID().toString(), // unique id for each task
     var text: String
 )
 
+// A distraction is any obstacle that the user may foresay that interfere with a building the specific habit.
+// For example, a distraction could be "YouTube". So, the user may enter "YouTube" to commit to not do the distraction
+// until after the task has been completed.
 data class Distraction(
     val id: String = UUID.randomUUID().toString(), // unique id for each task
     var text: String
 )
 
+// This holds all the data for a specific task.
 data class TaskCardData(
     val day: Day,
     val task: Task,
