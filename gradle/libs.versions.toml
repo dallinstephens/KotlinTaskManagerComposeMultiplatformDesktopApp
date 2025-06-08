@@ -1,3 +1,4 @@
+# gradle/libs.versions.toml (Original Project)
 [versions]
 androidx-lifecycle = "2.9.0"
 composeHotReload = "1.0.0-alpha10"
@@ -5,6 +6,7 @@ composeMultiplatform = "1.8.1"
 junit = "4.13.2"
 kotlin = "2.1.21"
 kotlinx-coroutines = "1.10.2"
+compose-bom = "2024.05.00" # <-- ADDED/CORRECTED THIS (Use the latest compatible BOM)
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -13,6 +15,18 @@ junit = { module = "junit:junit", version.ref = "junit" }
 androidx-lifecycle-viewmodel = { module = "org.jetbrains.androidx.lifecycle:lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
 androidx-lifecycle-runtimeCompose = { module = "org.jetbrains.androidx.lifecycle:lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
 kotlinx-coroutinesSwing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+
+# COMPOSE LIBRARIES - THESE NOW GET THEIR VERSIONS FROM THE compose-bom
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "compose-bom" } # <-- ADDED THIS
+compose-ui = { module = "androidx.compose.ui:ui" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-runtime = { module = "androidx.compose.runtime:runtime" }
+
+# JetBrains Compose Multiplatform components
+compose-resources = { module = "org.jetbrains.compose.components:components-resources" }
+
 
 [plugins]
 composeHotReload = { id = "org.jetbrains.compose.hot-reload", version.ref = "composeHotReload" }

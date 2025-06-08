@@ -16,8 +16,12 @@
 
 {Describe the programming language that you used and any libraries.}
 * Kotlin
+* Compose Multiplatform
 * Visual Studio Code
-* Android Studio
+* Kotlin Language by fwcd (Visual Studio Code Extension)
+* Code Runner by Jun Han (Visual Studio Code Extension)
+* Gradle
+* GitHub / Git
 
 # Useful Websites
 
@@ -25,16 +29,17 @@
 - [Kotlin](https://kotlinlang.org/)
 - [Learn Kotlin Programming Tutorial - Programiz](https://www.programiz.com/kotlin-programming)
 - [Kotlin - Install the Compiler](https://kotlinlang.org/docs/command-line.html)
-- [How to run a kotlin project in android emulator](https://stackoverflow.com/questions/74463321/how-to-run-a-kotlin-project-in-android-emulator)
-- [Android Studio (Emulator) - Download](https://developer.android.com/studio)
-- [Android Emulator Launcher: extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=Dannark.AndroidLauncher)
 - [Jetbrains Compose Multiplatform](https://www.jetbrains.com/compose-multiplatform/)
 - [Jetbrains: Create your Compose Multiplatform app](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform-create-first-app.html)
+- [Kotlin Compose Multiplatform Tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform.html)
+- [Kotlin Multiplatform Wizard: Download](https://kmp.jetbrains.com/?desktop=true&includeTests=true)
+- [Compose Multiplatform Desktop Template: GitHub](https://github.com/JetBrains/compose-multiplatform-desktop-template)
 - [Gradle](https://github.com/gradle/gradle-distributions/releases)
 - [Gradle Compatibility Matrix](https://docs.gradle.org/current/userguide/compatibility.html)
-- [Kotlin Compose Multiplatform Tutorial](https://www.jetbrains.com/help/kotlin-multiplatform-dev/compose-multiplatform.html)
-- [JetBrains Compose Multiplatform: GitHub files to start with](https://github.com/JetBrains/compose-multiplatform-template)
-- [Kotlin Multiplatform Wizard: Download](https://kmp.jetbrains.com/?desktop=true&includeTests=true)
+- [JDK 17 - LTS Download](https://adoptium.net/temurin/releases/?os=any&arch=any&version=17)
+- [JetPack Compose Tutorial](https://www.jetpackcompose.net/textfield-in-jetpack-compose)
+- [androidx.compose.material3 API Reference Overview](https://www.jetpackcompose.net/textfield-in-jetpack-compose)
+
 
 # Future Work
 

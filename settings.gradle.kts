@@ -3,28 +3,24 @@ enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
     repositories {
-        google {
-            mavenContent {
-                includeGroupAndSubgroups("androidx")
-                includeGroupAndSubgroups("com.android")
-                includeGroupAndSubgroups("com.google")
-            }
-        }
-        mavenCentral()
         gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        // ADD THIS NEW REPOSITORY FOR THE COMPOSE COMPILER PLUGIN
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/maven") // <--- ADD THIS LINE
     }
 }
 
 dependencyResolutionManagement {
+    // This line is important for ensuring Gradle only uses repositories defined here
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google {
-            mavenContent {
-                includeGroupAndSubgroups("androidx")
-                includeGroupAndSubgroups("com.android")
-                includeGroupAndSubgroups("com.google")
-            }
-        }
+        // Simplify google() and remove restrictive content filter
+        google()
         mavenCentral()
+        // THIS IS CRUCIAL FOR JETBRAINS COMPOSE MULTIPLATFORM LIBRARIES
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
     }
 }
 
